@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Student Information
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <table>
+        <tr class="row">
+            <td class="col-3">
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>ID</label>
+                        <input type="text" name="idcode" id="idcode" required>
+                    </div>
+                    <div>
+                        <label>Name</label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+                    
+                    <div>
+                        <label>Birthday</label><br>
+                        <input type="date" name="birthday" id="birthday" required>
+                    </div>
+                    <div>
+                        <label>Address</label>
+                        <input type="text" name="address" id="address" required>
+                    </div>
+                    <div>
+                        <label>Time</label>
+                        <input type="time" name="time" id="time" required>
+                    </div>
+                    <div class="form-action-buttons">
+                        <input type="submit" value="Add">
+                    </div>
+                </form>
+            </td>
+            <td class="col-9">
+                <table class="list" id="studentlist">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Birthday</th>
+                            <th>Address</th>
+                            <th>Time</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>
